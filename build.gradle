@@ -12,7 +12,13 @@ repositories {
     jcenter()
 }
 
-mainClassName = 'main.Main'
+run{
+    standardInput = System.in
+}
+
+application {
+    mainClassName = 'main.Main'
+}
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
